@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TIC TAC TOE GAME</title>
+</head>
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p id="ins">
+            Game starts by tapping a box<br><br>First Player is <b>Player X</b> and Second Player is <b>Player 0</b>
+        </p>
+        <div class="ui">
+            <div class="row">
+                <button class="cell" id="b1" onclick="makeMove(this)"></button>
+                <button class="cell" id="b2" onclick="makeMove(this)"></button>
+                <button class="cell" id="b3" onclick="makeMove(this)"></button>
+            </div>
+            <div class="row">
+                <button class="cell" id="b4" onclick="makeMove(this)"></button>
+                <button class="cell" id="b5" onclick="makeMove(this)"></button>
+                <button class="cell" id="b6" onclick="makeMove(this)"></button>
+            </div>
+            <div class="row">
+                <button class="cell" id="b7" onclick="makeMove(this)"></button>
+                <button class="cell" id="b8" onclick="makeMove(this)"></button>
+                <button class="cell" id="b9" onclick="makeMove(this)"></button>
+            </div>
+        </div>
+        <button id="resetBtn" onclick="resetGame()">RESET</button>
+        <p id="status"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
